@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class BasicMove : MonoBehaviour
 {
+    // Ссылка на переменные игровой сцены
+    [SerializeField] private GameSceneVariables gameSceneVariables;
+
     // Update is called once per frame
     void Update()
     {
-        // Перемещаем объект справа налево
-        transform.Translate(-1 * Time.deltaTime, 0, 0);
+        // Перемещаем объект справа налево с глобальной скоростью
+        transform.Translate(-gameSceneVariables.globalSpeed * Time.deltaTime, 0, 0);
     }
 }
