@@ -8,9 +8,14 @@ using UnityEngine.Events;
 public class EventBus : ScriptableObject
 {
     public UnityEvent<int> scoreChangeEvent;
+    public UnityEvent countdownCompleteEvent;
+    public UnityEvent gameCompleteEvent;
+    public UnityEvent gameOverComplete;
+    public UnityEvent<string> loadSceneEvent;
 
     public void ChangeScore(int scoreChangeValue)
     {
         scoreChangeEvent.Invoke(scoreChangeValue);
     }
+
 }

@@ -1,13 +1,16 @@
 using UnityEngine;
 
-// Управление перемещением игрока в пространстве
-
 public class PlayerController : MonoBehaviour
 {
-    // Ссылка на твёрдое тело для управления
     [SerializeField] private Rigidbody2D body;
 
-    // Update is called once per frame
+    [SerializeField] private EventBus eventBus;
+
+    private void Start()
+    {
+        eventBus.gameCompleteEvent.AddListener(OnGameComplete);
+    }
+
     void Update()
     {
         Touch touch = Input.GetTouch(0);
@@ -16,8 +19,10 @@ public class PlayerController : MonoBehaviour
         {
             body.AddForce(touch.deltaPosition);
         }
+    }
 
-        /*Vector2 vector = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
-        body.AddForce(vector);*/
+    private void OnGameComplete()
+    {
+        gameObject.tag = "Untagged";
     }
 }

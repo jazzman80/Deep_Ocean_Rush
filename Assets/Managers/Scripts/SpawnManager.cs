@@ -1,50 +1,59 @@
 using System.Collections;
 using UnityEngine;
 
-// Управляет инстанциацией объектов в игровой сцене
+// Spawns objects to scene
 
 public class SpawnManager : MonoBehaviour
 {
-    // Ссылка на префаб для инстанциации
+    [SerializeField] private EventBus eventBus;
     [SerializeField] private GameObject prefab;
 
-    // Сюда вкладывать готовые объекты
+    // New objects container
     [SerializeField] private Transform prefabParent;
 
-    // Минимальное и максимальное время задержки
+    // Time Range
     [Header("Delay Time")]
     [SerializeField] private float minTime;
     [SerializeField] private float maxTime;
 
-    // Минимальные и максимальные координаты для случайной позиции
+    // Position Ranges
     [Header("Position Ranges")]
     [SerializeField] private float minX;
     [SerializeField] private float maxX;
     [SerializeField] private float minY;
     [SerializeField] private float maxY;
 
-    // На старте
     private void Start()
+    {
+        eventBus.countdownCompleteEvent.AddListener(Activate);
+        eventBus.gameCompleteEvent.AddListener(Deactivate);
+    }
+
+    private void Activate()
     {
         StartCoroutine(SpawnPrefab());
     }
 
-    // Инстанциирует префаб с задержкой по времени
+    private void Deactivate()
+    {
+        StopAllCoroutines();
+    }
+
+    // Delaying Instantiation
     private IEnumerator SpawnPrefab()
     {
-        // Случайная задержка по времени
+        // Random delay time
         float randomTime = Random.Range(minTime, maxTime);
 
         yield return new WaitForSeconds(randomTime);
 
-        // Случайная позиция
+        // Random position
         float randomX = Random.Range(minX, maxX);
         float randomY = Random.Range(minY, maxY);
         Vector3 randomPosition = new Vector3(randomX, randomY, 0f);
 
         Instantiate(prefab, randomPosition, Quaternion.identity, prefabParent);
 
-        // Перезапуск корутины
         StartCoroutine(SpawnPrefab());
     }
 }
