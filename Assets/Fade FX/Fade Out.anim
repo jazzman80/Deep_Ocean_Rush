@@ -305,7 +305,7 @@ AnimationClip:
   m_Events:
   - time: 1
     functionName: LoadNextScene
-    data: Post Game
+    data: 
     objectReferenceParameter: {fileID: 11400000, guid: 3afc86a3f5404420fa4577477d6151d7, type: 2}
     floatParameter: 0
     intParameter: 0

@@ -7,9 +7,10 @@ using TMPro;
 
 public class TimeManager : MonoBehaviour
 {
+    [SerializeField] private Level level;
+    
     [Header("Times")]
     [SerializeField] private int countdownTime;
-    [SerializeField] private int gameTime;
     [SerializeField] private int gameOverTime;
     [SerializeField] private int goTime;
 
@@ -52,7 +53,7 @@ public class TimeManager : MonoBehaviour
 
         eventBus.countdownCompleteEvent.Invoke();
 
-        gameTimer.Play(gameTime);
+        gameTimer.Play(level.time);
         goTimer.Play(goTime);
     }
 
@@ -80,6 +81,6 @@ public class TimeManager : MonoBehaviour
 
     private void OnGameOverComplete()
     {
-        eventBus.gameOverComplete.Invoke();
+        eventBus.sceneComplete.Invoke();
     }
 }

@@ -8,6 +8,6 @@ public class UpwardMove : MonoBehaviour
 
     private void Update()
     {
-        transform.Translate(0f, speed * Time.deltaTime, 0f);
+        transform.Translate(0f, speed * Time.smoothDeltaTime, 0f);
     }
 }

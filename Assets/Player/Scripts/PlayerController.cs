@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
         eventBus.gameCompleteEvent.AddListener(OnGameComplete);
     }
 
-    void Update()
+    void FixedUpdate()
     {
         Touch touch = Input.GetTouch(0);
 

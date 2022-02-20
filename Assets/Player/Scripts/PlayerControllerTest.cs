@@ -13,7 +13,7 @@ public class PlayerControllerTest : MonoBehaviour
         eventBus.gameCompleteEvent.AddListener(OnGameComplete);
     }
 
-    void Update()
+    void FixedUpdate()
     {
         Vector2 vector = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
         body.AddForce(vector * 15f);

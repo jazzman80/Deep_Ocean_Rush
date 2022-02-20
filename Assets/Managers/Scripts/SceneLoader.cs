@@ -7,13 +7,15 @@ public class SceneLoader : MonoBehaviour
 {
     [SerializeField] private EventBus eventBus;
 
+    [SerializeField] private string nextSceneName;
+
     private void Start()
     {
         eventBus.loadSceneEvent.AddListener(OnNextSceneLoad);
     }
 
-    private void OnNextSceneLoad(string nextScene)
+    private void OnNextSceneLoad()
     {
-        SceneManager.LoadScene(nextScene);
+        SceneManager.LoadScene(nextSceneName);
     }
 }

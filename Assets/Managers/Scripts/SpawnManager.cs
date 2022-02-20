@@ -42,17 +42,17 @@ public class SpawnManager : MonoBehaviour
     // Delaying Instantiation
     private IEnumerator SpawnPrefab()
     {
-        // Random delay time
-        float randomTime = Random.Range(minTime, maxTime);
-
-        yield return new WaitForSeconds(randomTime);
-
         // Random position
         float randomX = Random.Range(minX, maxX);
         float randomY = Random.Range(minY, maxY);
         Vector3 randomPosition = new Vector3(randomX, randomY, 0f);
 
         Instantiate(prefab, randomPosition, Quaternion.identity, prefabParent);
+
+        // Random delay time
+        float randomTime = Random.Range(minTime, maxTime);
+
+        yield return new WaitForSeconds(randomTime);
 
         StartCoroutine(SpawnPrefab());
     }

@@ -12,7 +12,7 @@ public class FadeFX : MonoBehaviour
 
     private void Start()
     {
-        eventBus.gameOverComplete.AddListener(OnGameOverComplete);
+        eventBus.sceneComplete.AddListener(OnGameOverComplete);
     }
 
     private void OnGameOverComplete()
@@ -20,8 +20,8 @@ public class FadeFX : MonoBehaviour
         animator.Play("Fade Out");
     }
 
-    private void LoadNextScene(string nextScene)
+    private void LoadNextScene()
     {
-        eventBus.loadSceneEvent.Invoke(nextScene);
+        eventBus.loadSceneEvent.Invoke();
     }
 }

@@ -11,6 +11,6 @@ public class BasicMove : MonoBehaviour
     void Update()
     {
         // Перемещаем объект справа налево с глобальной скоростью
-        transform.Translate(-gameSceneVariables.globalSpeed * Time.deltaTime, 0, 0);
+        transform.Translate(-gameSceneVariables.globalSpeed * Time.smoothDeltaTime, 0, 0);
     }
 }
