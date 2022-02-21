@@ -200,7 +200,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1685553618278831458, guid: b4fa3b976bbdf064d9466ba741bae572, type: 3}
       propertyPath: m_Name
-      value: Scene Loader
+      value: Next Scene Loader
       objectReference: {fileID: 0}
     - target: {fileID: 1685553618278831459, guid: b4fa3b976bbdf064d9466ba741bae572, type: 3}
       propertyPath: m_RootOrder
@@ -733,7 +733,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   appVariables: {fileID: 11400000, guid: 27b8f2bddb5434a7a83b26e05afdf8b6, type: 2}
-  level: {fileID: 11400000, guid: 7b66428bcbce1894aba356f8914e5629, type: 2}
   message: {fileID: 682768390}
 --- !u!1001 &7734665979108074884
 PrefabInstance:

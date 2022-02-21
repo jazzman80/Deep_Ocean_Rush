@@ -6,11 +6,11 @@ using UnityEngine;
 
 public class GameSceneConstructor : MonoBehaviour
 {
-    [SerializeField] private Level level;
+    [SerializeField] private AppVariables appVariables;
 
     private void Start()
     {
-        foreach(GameObject spawnerPrefab in level.spawnersList)
+        foreach (GameObject spawnerPrefab in appVariables.CurrentLevel.spawnersList)
         {
             Instantiate(spawnerPrefab);
         }

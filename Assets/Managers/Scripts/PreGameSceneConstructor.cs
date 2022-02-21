@@ -6,13 +6,15 @@ using UnityEngine.UI;
 
 public class PreGameSceneConstructor : MonoBehaviour
 {
-    [SerializeField] private Level level;
+    [SerializeField] private AppVariables appVariables;
     [SerializeField] private TextMeshProUGUI description;
+    [SerializeField] private TextMeshProUGUI levelNumber;
     [SerializeField] private Image startImage;
 
     private void Start()
     {
-        description.text = level.preGameSceneDescription;
-        startImage.sprite = level.preGameSceneImage;
+        levelNumber.text = "LEVEL " + (appVariables.CurrentLevelIndex + 1);
+        description.text = appVariables.CurrentLevel.preGameSceneDescription;
+        startImage.sprite = appVariables.CurrentLevel.preGameSceneImage;
     }
 }
