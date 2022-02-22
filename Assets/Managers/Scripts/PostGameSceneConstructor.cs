@@ -6,7 +6,7 @@ using TMPro;
 public class PostGameSceneConstructor : MonoBehaviour
 {
     [SerializeField] private AppVariables appVariables;
-
+    [SerializeField] private EventBus eventBus;
     [SerializeField] private TextMeshProUGUI message;
 
     private void Start()
@@ -20,6 +20,8 @@ public class PostGameSceneConstructor : MonoBehaviour
         else
         {
             message.text = "Level Failed";
+            eventBus.lifeLossEvent.Invoke();
+            appVariables.Life--;
         }
     }
 }

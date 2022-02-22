@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67d60706629399f48817347d3004da9e, type: 3}
   m_Name: Level 002
   m_EditorClassIdentifier: 
-  winScore: 1
-  time: 15
+  winScore: 100
+  time: 10
   spawnersList:
   - {fileID: 2583972015116399608, guid: 41293e7ca8c17514fa7bd493815d1a09, type: 3}
   - {fileID: 4937884382469030618, guid: 2b1e6390f14f32846ac9fd7c0616b0b4, type: 3}

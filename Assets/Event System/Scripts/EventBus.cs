@@ -12,6 +12,7 @@ public class EventBus : ScriptableObject
     public UnityEvent gameCompleteEvent;
     public UnityEvent sceneComplete;
     public UnityEvent loadSceneEvent;
+    public UnityEvent lifeLossEvent;
 
     public void ChangeScore(int scoreChangeValue)
     {
