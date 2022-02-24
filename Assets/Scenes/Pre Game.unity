@@ -169,8 +169,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   appVariables: {fileID: 11400000, guid: 27b8f2bddb5434a7a83b26e05afdf8b6, type: 2}
+  eventBus: {fileID: 11400000, guid: 3afc86a3f5404420fa4577477d6151d7, type: 2}
   timer: {fileID: 29286043}
   startLevelButton: {fileID: 302844538}
+  buttonText: {fileID: 246964703}
 --- !u!114 &29286043
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -580,31 +582,23 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 7734665977652230455, guid: dbf763c6a5276dc47b21dc622b83479e, type: 3}
   m_PrefabInstance: {fileID: 246964701}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &302844533 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7734665977575543293, guid: dbf763c6a5276dc47b21dc622b83479e, type: 3}
+--- !u!114 &246964703 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7734665979642435346, guid: dbf763c6a5276dc47b21dc622b83479e, type: 3}
   m_PrefabInstance: {fileID: 246964701}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &302844535
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 302844533}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22459e4d929fe4148a1c51002aeffc49, type: 3}
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  appVariables: {fileID: 11400000, guid: 27b8f2bddb5434a7a83b26e05afdf8b6, type: 2}
-  button: {fileID: 302844538}
 --- !u!114 &302844538 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7734665977575543289, guid: dbf763c6a5276dc47b21dc622b83479e, type: 3}
   m_PrefabInstance: {fileID: 246964701}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 302844533}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
