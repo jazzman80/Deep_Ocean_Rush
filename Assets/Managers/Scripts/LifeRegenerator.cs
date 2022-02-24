@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 using System;
 
 // Regenerates life after certain system time
@@ -7,6 +8,7 @@ public class LifeRegenerator : MonoBehaviour
 {
     [SerializeField] private AppVariables appVariables;
     [SerializeField] private Timer timer;
+    [SerializeField] private Button startLevelButton;
 
     private void Start()
     {
@@ -16,10 +18,12 @@ public class LifeRegenerator : MonoBehaviour
             appVariables.Life++;
         }
 
-        if (appVariables.Life==0)
+        if (appVariables.Life == 0)
         {
-            timer.Play();
+            startLevelButton.interactable = false;
         }
+
+        timer.Play()
     }
 
 }
