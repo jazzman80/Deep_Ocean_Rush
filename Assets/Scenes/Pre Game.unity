@@ -133,6 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 29286041}
   - component: {fileID: 29286042}
+  - component: {fileID: 29286043}
   m_Layer: 0
   m_Name: Life Regenerator
   m_TagString: Untagged
@@ -167,8 +168,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c251f81d6f46140ea9c5bf8455870687, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventBus: {fileID: 11400000, guid: 3afc86a3f5404420fa4577477d6151d7, type: 2}
   appVariables: {fileID: 11400000, guid: 27b8f2bddb5434a7a83b26e05afdf8b6, type: 2}
+  timer: {fileID: 29286043}
+  startLevelButton: {fileID: 302844538}
+--- !u!114 &29286043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 29286040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae60eb0f7d62946e2a89bc03fd0f8054, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tickEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  completedEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &135471528
 GameObject:
   m_ObjectHideFlags: 0
@@ -413,6 +433,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135471532}
     m_Modifications:
+    - target: {fileID: 7734665977575543289, guid: dbf763c6a5276dc47b21dc622b83479e, type: 3}
+      propertyPath: m_Interactable
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7734665977575543294, guid: dbf763c6a5276dc47b21dc622b83479e, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0.2

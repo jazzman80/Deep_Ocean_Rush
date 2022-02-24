@@ -12,18 +12,29 @@ public class LifeRegenerator : MonoBehaviour
 
     private void Start()
     {
+        timer.completedEvent.AddListener(OnTimerComplete);
+
         while (DateTime.Compare(DateTime.Now, appVariables.nextLifeTime) > 0 && appVariables.Life < 3)
         {
             appVariables.nextLifeTime.AddMinutes(appVariables.LifeRegenerationTime);
             appVariables.Life++;
         }
 
-        if (appVariables.Life == 0)
-        {
-            startLevelButton.interactable = false;
-        }
+        StartNewLifeTimer();
+    }
 
-        timer.Play()
+    private void StartNewLifeTimer()
+    {
+        int timeSeconds = (int)(appVariables.nextLifeTime - DateTime.Now).TotalSeconds;
+        timer.Play(timeSeconds);
+        if (appVariables.Life > 0) startLevelButton.interactable = true;
+    }
+
+    private void OnTimerComplete()
+    {
+        appVariables.Life++;
+        appVariables.nextLifeTime = DateTime.Now.AddMinutes(appVariables.LifeRegenerationTime);
+        if (appVariables.Life < 3) StartNewLifeTimer();
     }
 
 }
