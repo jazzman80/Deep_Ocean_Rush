@@ -5,24 +5,21 @@ using System;
 
 public class LifeRegenerator : MonoBehaviour
 {
-    [SerializeField] private EventBus eventBus;
     [SerializeField] private AppVariables appVariables;
+    [SerializeField] private Timer timer;
 
     private void Start()
     {
-        eventBus.lifeLossEvent.AddListener(StartNewLifeTimer);
-
-        while (DateTime.Compare(DateTime.Now, appVariables.nextLifeTime) < 0 && appVariables.Life < 3)
+        while (DateTime.Compare(DateTime.Now, appVariables.nextLifeTime) > 0 && appVariables.Life < 3)
         {
             appVariables.nextLifeTime.AddMinutes(appVariables.LifeRegenerationTime);
             appVariables.Life++;
         }
+
+        if (appVariables.Life==0)
+        {
+            timer.Play();
+        }
     }
 
-    private void StartNewLifeTimer()
-    {
-        DateTime lifeLossTime = DateTime.Now;
-        lifeLossTime.AddMinutes(appVariables.LifeRegenerationTime);
-        appVariables.nextLifeTime = lifeLossTime;
-    }
 }

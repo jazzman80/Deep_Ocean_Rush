@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using System;
 
 // Builds Post Game scene
 
@@ -20,7 +21,7 @@ public class PostGameSceneConstructor : MonoBehaviour
         else
         {
             message.text = "Level Failed";
-            eventBus.lifeLossEvent.Invoke();
+            appVariables.nextLifeTime = DateTime.Now.AddMinutes(appVariables.LifeRegenerationTime);
             appVariables.Life--;
         }
     }
