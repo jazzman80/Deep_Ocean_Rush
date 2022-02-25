@@ -173,6 +173,7 @@ MonoBehaviour:
   timer: {fileID: 29286043}
   startLevelButton: {fileID: 302844538}
   buttonText: {fileID: 246964703}
+  lifePanel: {fileID: 1607377189}
 --- !u!114 &29286043
 MonoBehaviour:
   m_ObjectHideFlags: 0

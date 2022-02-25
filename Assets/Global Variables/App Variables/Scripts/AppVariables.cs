@@ -37,7 +37,7 @@ public class AppVariables : ScriptableObject
     }
 
     [Header("Level System")]
-    private int currentLevelIndex;
+    [SerializeField] private int currentLevelIndex;
     [SerializeField] private List<Level> levelPool = new();
     public Level CurrentLevel => levelPool[CurrentLevelIndex];
 

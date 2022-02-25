@@ -9,6 +9,7 @@ public class PostGameSceneConstructor : MonoBehaviour
     [SerializeField] private AppVariables appVariables;
     [SerializeField] private EventBus eventBus;
     [SerializeField] private TextMeshProUGUI message;
+    [SerializeField] private SaveGame saveGame;
 
     private void Start()
     {
@@ -24,5 +25,7 @@ public class PostGameSceneConstructor : MonoBehaviour
             appVariables.nextLifeTime = DateTime.Now.AddMinutes(appVariables.LifeRegenerationTime);
             appVariables.Life--;
         }
+
+        saveGame.Save();
     }
 }

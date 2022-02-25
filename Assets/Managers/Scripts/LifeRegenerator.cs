@@ -12,6 +12,7 @@ public class LifeRegenerator : MonoBehaviour
     [SerializeField] private Timer timer;
     [SerializeField] private Button startLevelButton;
     [SerializeField] private TextMeshProUGUI buttonText;
+    [SerializeField] private LifePanel lifePanel;
 
     private void Start()
     {
@@ -20,11 +21,14 @@ public class LifeRegenerator : MonoBehaviour
 
         while (DateTime.Compare(DateTime.Now, appVariables.nextLifeTime) > 0 && appVariables.Life < 3)
         {
-            appVariables.nextLifeTime.AddMinutes(appVariables.LifeRegenerationTime);
+            appVariables.nextLifeTime = appVariables.nextLifeTime.AddMinutes(appVariables.LifeRegenerationTime);
             appVariables.Life++;
         }
 
-        StartNewLifeTimer();
+        if (appVariables.Life < 3) StartNewLifeTimer();
+
+        if (appVariables.Life > 0) startLevelButton.interactable = true;
+
     }
 
     private void StartNewLifeTimer()
@@ -40,6 +44,7 @@ public class LifeRegenerator : MonoBehaviour
 
     private void OnTimerComplete()
     {
+        lifePanel.UpdateLife();
         appVariables.Life++;
         appVariables.nextLifeTime = DateTime.Now.AddMinutes(appVariables.LifeRegenerationTime);
         if (appVariables.Life < 3) StartNewLifeTimer();
