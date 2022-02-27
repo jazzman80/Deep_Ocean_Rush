@@ -19,4 +19,9 @@ public class LifePanel : MonoBehaviour
             indicators[i].SwitchOn();
         }
     }
+
+    public void UpdateLife()
+    {
+        indicators[appVariables.Life].SwitchOn();
+    }
 }
