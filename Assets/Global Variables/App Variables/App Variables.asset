@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 571905af132434948a6f0d715297e488, type: 3}
   m_Name: App Variables
   m_EditorClassIdentifier: 
-  score: 1
+  score: 0
   life: 3
   lifeRegenerationTime: 0.5
   levelPool:
