@@ -1,22 +1,16 @@
 using UnityEngine;
 
-// Поведение звезды
-
 public class Star : MonoBehaviour
 {
-    // Ссылка на шину событий
-    [SerializeField] private EventBus eventBus;
+    [SerializeField] private GameObject avatar;
+    [SerializeField] private GameObject particles;
 
-    // Очки, начисляемые при собирании звезды
-    [SerializeField] private int cost;
-
-    // При контакте с игроком
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            eventBus.ChangeScore(cost);
-
+            Instantiate(avatar, transform.position, Quaternion.identity);
+            Instantiate(particles, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
     }

@@ -11,6 +11,10 @@ PrefabInstance:
       propertyPath: cost
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -1003753904755802787, guid: 86d6ab4bff99a4e73a7bc661dd33a722, type: 3}
+      propertyPath: avatar
+      value: 
+      objectReference: {fileID: 3317342859291477917, guid: 18de4d2e6c0a74757b8e299cf5881c8d, type: 3}
     - target: {fileID: 1832212351296994329, guid: 86d6ab4bff99a4e73a7bc661dd33a722, type: 3}
       propertyPath: m_Color.b
       value: 0
