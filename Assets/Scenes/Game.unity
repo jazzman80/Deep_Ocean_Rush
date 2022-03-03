@@ -828,6 +828,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   body: {fileID: 892701132}
+  hitForce: -50
   eventBus: {fileID: 11400000, guid: 3afc86a3f5404420fa4577477d6151d7, type: 2}
 --- !u!114 &892701135
 MonoBehaviour:
@@ -855,6 +856,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bba2f7c1f41c24d35a5e5f6095dfa7ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hitForce: -50
   body: {fileID: 892701132}
   eventBus: {fileID: 11400000, guid: 3afc86a3f5404420fa4577477d6151d7, type: 2}
 --- !u!1 &927030428

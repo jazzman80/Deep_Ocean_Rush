@@ -5,6 +5,7 @@ using UnityEngine;
 public class Jellyfish : MonoBehaviour
 {
     [SerializeField] private EventBus eventBus;
+    [SerializeField] private GameObject particles;
 
     [SerializeField] private int cost;
 
@@ -14,6 +15,8 @@ public class Jellyfish : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             eventBus.ChangeScore(-cost);
+
+            Instantiate
         }
     }
 }

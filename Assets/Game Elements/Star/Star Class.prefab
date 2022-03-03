@@ -258,4 +258,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   avatar: {fileID: 0}
-  particles: {fileID: 3586228193324053369, guid: 526a46a5e724f4c78a860007fc3f985a, type: 3}
+  particles: {fileID: 100006, guid: eb4f92c271ae24cbdb70db983b4a7d35, type: 3}

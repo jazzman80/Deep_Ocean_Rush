@@ -67,5 +67,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Five Star Avatar
       objectReference: {fileID: 0}
+    - target: {fileID: 6362559976024304675, guid: 3e73040cbcb5c42de803e97fef1b8caf, type: 3}
+      propertyPath: cost
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e73040cbcb5c42de803e97fef1b8caf, type: 3}
