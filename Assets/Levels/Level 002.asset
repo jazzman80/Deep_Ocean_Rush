@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Level 002
   m_EditorClassIdentifier: 
   winScore: 100
-  time: 60
+  time: 10
   spawnersList:
   - {fileID: 3211530073870514751, guid: 1de26467f46f0b649826469add4e8645, type: 3}
   - {fileID: 4937884382469030618, guid: 2b1e6390f14f32846ac9fd7c0616b0b4, type: 3}

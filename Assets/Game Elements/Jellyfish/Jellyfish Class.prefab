@@ -212,6 +212,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eventBus: {fileID: 11400000, guid: 3afc86a3f5404420fa4577477d6151d7, type: 2}
+  particles: {fileID: 100008, guid: 413e392e3ef0c47e8aef950bf35717e7, type: 3}
   cost: 0
 --- !u!61 &3756567279920765041
 BoxCollider2D:

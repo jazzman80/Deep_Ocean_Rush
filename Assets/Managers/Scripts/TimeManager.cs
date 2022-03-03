@@ -24,6 +24,7 @@ public class TimeManager : MonoBehaviour
     [Header("UI")]
     [SerializeField] private TextMeshProUGUI centralUI;
     [SerializeField] private TextMeshProUGUI timerUI;
+    [SerializeField] private GameObject goTextUI;
 
     private void Start()
     {
@@ -47,9 +48,9 @@ public class TimeManager : MonoBehaviour
 
     private void OnCountdownComplete()
     {
-        centralUI.text = "GO!";
-
         eventBus.countdownCompleteEvent.Invoke();
+        centralUI.gameObject.SetActive(false);
+        goTextUI.SetActive(true);
 
         gameTimer.Play(appVariables.CurrentLevel.time);
         goTimer.Play(goTime);
@@ -57,7 +58,7 @@ public class TimeManager : MonoBehaviour
 
     private void OnGoComplete()
     {
-        centralUI.gameObject.SetActive(false);
+        goTextUI.SetActive(false);
     }
 
     private void OnGameTick(int tickNumber)

@@ -16,7 +16,7 @@ public class Jellyfish : MonoBehaviour
         {
             eventBus.ChangeScore(-cost);
 
-            Instantiate
+            Instantiate(particles, transform.position, Quaternion.identity, transform);
         }
     }
 }
