@@ -115,10 +115,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4987443950369678442}
   - component: {fileID: 8351665555123524795}
-  - component: {fileID: 1618073385353874818}
-  - component: {fileID: 6837826883022748520}
   - component: {fileID: 240039917500303112}
-  - component: {fileID: -1003753904755802787}
+  - component: {fileID: 3778399289515212073}
+  - component: {fileID: 3210679007977984631}
   m_Layer: 0
   m_Name: Star Class
   m_TagString: Untagged
@@ -168,31 +167,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3, y: 3}
   m_EdgeRadius: 0
---- !u!114 &1618073385353874818
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6218982762881652859}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7c7c00c517c4b4dc08c67488fb0b9581, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameSceneVariables: {fileID: 11400000, guid: e0b315fc1b801470382afb9570854ea8, type: 2}
---- !u!114 &6837826883022748520
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6218982762881652859}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b81270d3dff514fadb6111db208238b8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &240039917500303112
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -245,7 +219,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &-1003753904755802787
+--- !u!114 &3778399289515212073
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -254,8 +228,30 @@ MonoBehaviour:
   m_GameObject: {fileID: 6218982762881652859}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4bc4b2a26a16455aa704e3b8c436566, type: 3}
+  m_Script: {fileID: 11500000, guid: e741851cba3ad425c91ecf922cc6b379, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  avatar: {fileID: 0}
-  particles: {fileID: 100006, guid: eb4f92c271ae24cbdb70db983b4a7d35, type: 3}
+  _data:
+    _json: '{"declarations":{"collection":{"$content":[{"name":"Avatar","value":{"$content":0,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"Particle
+      FX","value":{"$content":1,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+    _objectReferences:
+    - {fileID: 6218982762881652859, guid: 3e73040cbcb5c42de803e97fef1b8caf, type: 3}
+    - {fileID: 100006, guid: eb4f92c271ae24cbdb70db983b4a7d35, type: 3}
+--- !u!114 &3210679007977984631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6218982762881652859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2fe5546f775c47d2820aa5e8a715f53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
+    _objectReferences:
+    - {fileID: 11400000, guid: b051918ee8ec947399d78fe593a25b82, type: 2}
