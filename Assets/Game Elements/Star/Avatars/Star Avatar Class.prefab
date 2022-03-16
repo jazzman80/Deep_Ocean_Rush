@@ -116,6 +116,8 @@ GameObject:
   - component: {fileID: 4987443950369678442}
   - component: {fileID: 8351665555123524795}
   - component: {fileID: 6362559976024304675}
+  - component: {fileID: 1994584298942221305}
+  - component: {fileID: 8233374866002849652}
   m_Layer: 0
   m_Name: Star Avatar Class
   m_TagString: Untagged
@@ -180,3 +182,35 @@ MonoBehaviour:
   eventBus: {fileID: 11400000, guid: 3afc86a3f5404420fa4577477d6151d7, type: 2}
   speed: 10
   cost: 1
+--- !u!114 &1994584298942221305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6218982762881652859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e741851cba3ad425c91ecf922cc6b379, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"declarations":{"collection":{"$content":[{"name":"Cost","value":{"$content":0,"$type":"System.Int32"},"typeHandle":{"Identification":"System.Int32,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+    _objectReferences: []
+--- !u!114 &8233374866002849652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6218982762881652859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2fe5546f775c47d2820aa5e8a715f53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
+    _objectReferences:
+    - {fileID: 11400000, guid: da48c125bf31b44a5bca2bb64738d1ae, type: 2}

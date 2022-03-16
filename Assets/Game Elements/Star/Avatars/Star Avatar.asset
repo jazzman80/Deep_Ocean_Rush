@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95e66c6366d904e98bc83428217d4fd7, type: 3}
+  m_Name: Star Avatar
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"collection":{"$content":[{"name":"Avatar Speed","value":{"$content":0.0,"$type":"System.Single"},"typeHandle":{"Identification":"System.Single,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":"Star
+      Avatar","summary":null,"pan":{"x":0.0,"y":0.0},"zoom":1.0,"elements":[{"nest":{"source":"Embed","macro":null,"embed":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":"Move","summary":null,"pan":{"x":0.0,"y":0.0},"zoom":1.0,"elements":[{"defaultValues":{},"position":{"x":-751.0,"y":-367.0},"guid":"2d796d19-2e07-459b-a903-110a5c1e2113","$version":"A","$type":"Unity.VisualScripting.GraphInput"},{"defaultValues":{},"position":{"x":-755.0,"y":-364.0},"guid":"099f1d34-72aa-46c3-9d2a-b62694ea4d46","$version":"A","$type":"Unity.VisualScripting.GraphOutput"},{"chainable":false,"member":{"name":"Translate","parameterTypes":["UnityEngine.Vector3"],"targetType":"UnityEngine.Transform","targetTypeName":"UnityEngine.Transform","$version":"A"},"defaultValues":{"target":null,"%translation":{"x":0.0,"y":0.0,"z":0.0,"$type":"UnityEngine.Vector3"}},"position":{"x":-48.0,"y":-196.0},"guid":"a927233c-3e76-4be5-b2b7-3219d49619a8","$version":"A","$type":"Unity.VisualScripting.InvokeMember","$id":"24"},{"coroutine":false,"defaultValues":{},"position":{"x":-393.0,"y":-300.0},"guid":"cb8a822b-8979-4928-9bab-84968ceefee9","$version":"A","$type":"Unity.VisualScripting.Update","$id":"27"},{"sourceUnit":{"$ref":"27"},"sourceKey":"trigger","destinationUnit":{"$ref":"24"},"destinationKey":"enter","guid":"955d28e3-65d1-4d30-8f30-98f9fafe3105","$type":"Unity.VisualScripting.ControlConnection"}],"$version":"A"}},"defaultValues":{},"position":{"x":-287.0,"y":-229.0},"guid":"5db7227f-dbf5-4ffd-a2e8-7e4a37b28d32","$version":"A","$type":"Unity.VisualScripting.SubgraphUnit"},{"nest":{"source":"Embed","macro":null,"embed":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":"Contact
+      with Score Indicator","summary":null,"pan":{"x":0.0,"y":0.0},"zoom":1.0,"elements":[{"defaultValues":{},"position":{"x":-250.0,"y":-30.0},"guid":"2d796d19-2e07-459b-a903-110a5c1e2113","$version":"A","$type":"Unity.VisualScripting.GraphInput"},{"defaultValues":{},"position":{"x":105.0,"y":-30.0},"guid":"099f1d34-72aa-46c3-9d2a-b62694ea4d46","$version":"A","$type":"Unity.VisualScripting.GraphOutput"}],"$version":"A"}},"defaultValues":{},"position":{"x":-338.0,"y":-131.0},"guid":"f051b260-0181-4402-aea8-6fa32aee7744","$version":"A","$type":"Unity.VisualScripting.SubgraphUnit"}],"$version":"A"}}'
+    _objectReferences: []
