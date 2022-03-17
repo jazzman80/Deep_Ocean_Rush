@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 9004153208925879556}
   - component: {fileID: 9004153208925879555}
   - component: {fileID: 9004153208925879554}
-  - component: {fileID: 9004153208925879557}
+  - component: {fileID: 6937601985903647980}
+  - component: {fileID: 1636325092946756497}
   m_Layer: 5
   m_Name: Fade FX
   m_TagString: Untagged
@@ -98,7 +99,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &9004153208925879557
+--- !u!114 &6937601985903647980
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -107,8 +108,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 9004153208925879552}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a991855eaacaf41c78be7ed73afcdbbb, type: 3}
+  m_Script: {fileID: 11500000, guid: e741851cba3ad425c91ecf922cc6b379, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventBus: {fileID: 11400000, guid: 3afc86a3f5404420fa4577477d6151d7, type: 2}
-  animator: {fileID: 9004153208925879554}
+  _data:
+    _json: '{"declarations":{"collection":{"$content":[],"$version":"A"},"$version":"A"}}'
+    _objectReferences: []
+--- !u!114 &1636325092946756497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9004153208925879552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2fe5546f775c47d2820aa5e8a715f53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
+    _objectReferences:
+    - {fileID: 11400000, guid: c63c6358ad54c44c7b5b58adde0b25be, type: 2}

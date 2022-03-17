@@ -2408,6 +2408,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 134749520}
     m_Modifications:
+    - target: {fileID: 90726003110753185, guid: b4fa3b976bbdf064d9466ba741bae572, type: 3}
+      propertyPath: _data._json
+      value: '{"declarations":{"collection":{"$content":[{"name":"Next Scene Name","value":{"$content":"Post
+        Game","$type":"System.String"},"typeHandle":{"Identification":"System.String,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+      objectReference: {fileID: 0}
     - target: {fileID: 1685553618278831458, guid: b4fa3b976bbdf064d9466ba741bae572, type: 3}
       propertyPath: m_Name
       value: Next Scene Loader
@@ -2592,7 +2598,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9004153208925879552, guid: 14023e67aa01831489ee78875186293c, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9004153208925879553, guid: 14023e67aa01831489ee78875186293c, type: 3}
       propertyPath: m_Pivot.x

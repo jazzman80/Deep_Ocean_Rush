@@ -304,9 +304,9 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 1
-    functionName: LoadNextScene
+    functionName: TriggerAnimationEvent
     data: 
-    objectReferenceParameter: {fileID: 11400000, guid: 3afc86a3f5404420fa4577477d6151d7, type: 2}
+    objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
