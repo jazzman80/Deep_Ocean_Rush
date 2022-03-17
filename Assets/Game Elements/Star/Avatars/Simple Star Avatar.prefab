@@ -15,6 +15,11 @@ PrefabInstance:
       propertyPath: m_Color.g
       value: 0.74509805
       objectReference: {fileID: 0}
+    - target: {fileID: 1994584298942221305, guid: 3e73040cbcb5c42de803e97fef1b8caf, type: 3}
+      propertyPath: _data._json
+      value: '{"declarations":{"collection":{"$content":[{"name":"Cost","value":{"$content":1,"$type":"System.Int32"},"typeHandle":{"Identification":"System.Int32,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+      objectReference: {fileID: 0}
     - target: {fileID: 4987443950369678442, guid: 3e73040cbcb5c42de803e97fef1b8caf, type: 3}
       propertyPath: m_RootOrder
       value: 0
