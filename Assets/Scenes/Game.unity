@@ -1164,7 +1164,6 @@ GameObject:
   - component: {fileID: 892701131}
   - component: {fileID: 892701133}
   - component: {fileID: 892701132}
-  - component: {fileID: 892701135}
   - component: {fileID: 892701134}
   - component: {fileID: 892701136}
   - component: {fileID: 892701138}
@@ -1254,20 +1253,6 @@ MonoBehaviour:
   body: {fileID: 892701132}
   hitForce: -50
   eventBus: {fileID: 11400000, guid: 3afc86a3f5404420fa4577477d6151d7, type: 2}
---- !u!114 &892701135
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 892701130}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b7d90a7ed14cbc40a3c4cbe7f31f8d1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameSceneVariables: {fileID: 11400000, guid: e0b315fc1b801470382afb9570854ea8, type: 2}
-  body: {fileID: 892701132}
 --- !u!114 &892701136
 MonoBehaviour:
   m_ObjectHideFlags: 0
