@@ -235,10 +235,13 @@ MonoBehaviour:
     _json: '{"declarations":{"collection":{"$content":[{"name":"Avatar","value":{"$content":0,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
       UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"Particle
       FX","value":{"$content":1,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"Loot
+      Label Prefab","value":{"$content":2,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
       UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences:
     - {fileID: 6218982762881652859, guid: 3e73040cbcb5c42de803e97fef1b8caf, type: 3}
     - {fileID: 100006, guid: eb4f92c271ae24cbdb70db983b4a7d35, type: 3}
+    - {fileID: 3630894273668100140, guid: f32f2704175114114a560c6d0f096f39, type: 3}
 --- !u!114 &3210679007977984631
 MonoBehaviour:
   m_ObjectHideFlags: 0
