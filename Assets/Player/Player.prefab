@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 6779384104473484816}
   - component: {fileID: 6779384104473484818}
   - component: {fileID: 6779384104473484817}
+  - component: {fileID: 2773233447193043354}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -146,6 +147,20 @@ MonoBehaviour:
     _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
     _objectReferences:
     - {fileID: 11400000, guid: 231d96ae42c324776bbb1fc8054c8bc9, type: 2}
+--- !u!114 &2773233447193043354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6779384104473484810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c29cff538c195c249b69c6f2236de67b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Library: []
+  m_SpriteLibraryAsset: {fileID: 7108339969198208228, guid: b952df83695314f648be3e32c5c49361, type: 3}
 --- !u!1 &6779384105354240256
 GameObject:
   m_ObjectHideFlags: 0
@@ -157,6 +172,7 @@ GameObject:
   - component: {fileID: 6779384105354240257}
   - component: {fileID: 6779384105354240258}
   - component: {fileID: 7267871662411499396}
+  - component: {fileID: 4678786272039220641}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -251,3 +267,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &4678786272039220641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6779384105354240256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed8b1ae4e4e52b34ea557c1c11e076fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_CategoryHash: 0
+  m_labelHash: 0
+  m_SpriteKey: 1.018571e-22
