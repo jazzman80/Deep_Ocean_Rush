@@ -15,7 +15,7 @@ MonoBehaviour:
   winScore: 0
   time: 10
   spawnersList:
-  - {fileID: 2583972015116399608, guid: 41293e7ca8c17514fa7bd493815d1a09, type: 3}
-  - {fileID: 4937884382469030618, guid: 2b1e6390f14f32846ac9fd7c0616b0b4, type: 3}
+  - {fileID: 4100519587727045363, guid: 41293e7ca8c17514fa7bd493815d1a09, type: 3}
+  - {fileID: 199740313866690964, guid: 2b1e6390f14f32846ac9fd7c0616b0b4, type: 3}
   preGameSceneDescription: Score 0 points at 10 seconds to win!
   preGameSceneImage: {fileID: 21300000, guid: 4c58c5803b1da406385102fa45804d04, type: 3}
